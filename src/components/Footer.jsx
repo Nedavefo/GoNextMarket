@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-blue-900 text-white py-8 mt-12">
       <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
         <div className="mb-4 sm:mb-0">
-          <img src="\logo.png" alt="Go Next Market" className="h-10 mb-2 mx-auto sm:mx-0" />
+          <img src="src\public\logo.png" alt="Go Next Market" className="h-10 mb-2 mx-auto sm:mx-0" />
           <p className="text-sm">Bogotá, Colombia</p>
           <p className="text-sm">contacto@gonextmarket.com</p>
         </div>
