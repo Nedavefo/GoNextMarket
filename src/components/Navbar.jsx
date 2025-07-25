@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="bg-blue-700 text-white p-4 shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="\logo.png" alt="Go Next Market" className="h-10 mr-3" />
+          <img src="\public\logo.png" alt="Go Next Market" className="h-10 mr-3" />
           <span className="font-bold text-xl">Go Next Market</span>
         </Link>
         <div className="space-x-6 hidden md:flex">
