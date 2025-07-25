@@ -2,14 +2,7 @@ import React from 'react';
 import ServiceCard from "../components/ServiceCard";
 import ContactForm from '../components/ContactForm';
 
-
 const services = [
-  {
-    title: 'Programación de encuestas',
-    description: 'Configuramos cuestionarios en SurveyToGo para levantamiento profesional.',
-    icon: '🧩',
-    color: 'bg-purple-100'
-  },
   {
     title: 'Validación y pruebas',
     description: 'Realizamos pruebas y revisiones lógicas antes del despliegue en campo.',
@@ -41,6 +34,12 @@ const services = [
     color: 'bg-sky-100'
   },
   {
+    title: 'Programación de encuestas',
+    description: 'Configuramos cuestionarios en SurveyToGo para levantamiento profesional.',
+    icon: '🧩',
+    color: 'bg-purple-100'
+  },
+  {
     title: 'Llamadas institucionales',
     description: 'Aplicamos encuestas telefónicas a instituciones o entes oficiales.',
     icon: '📞',
@@ -50,11 +49,17 @@ const services = [
 
 export default function Home() {
   return (
-    <div className="text-center px-4 sm:px-8 py-10">
-      <h1 className="text-4xl font-bold text-purple-700 mb-4">Bienvenido a Go Next Market</h1>
-      <p className="text-gray-600 mb-12">Inteligencia de mercado con alcance regional</p>
+    <div>
+      <section className="bg-gradient-to-r from-blue-800 to-purple-700 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <img src="src\public\logo.png" alt="Go Next Market" className="h-20 mx-auto mb-6" />
+          <h1 className="text-5xl font-bold mb-4">Inteligencia de Mercado con Alcance Regional</h1>
+          <p className="text-lg mb-6">Soluciones en recolección de datos y ejecución de estudios en campo en LATAM</p>
+          <a href="#contacto" className="inline-block bg-white text-purple-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">Contáctanos</a>
+        </div>
+      </section>
 
-      <section id="servicios" className="mt-10">
+      <section id="servicios" className="text-center px-4 sm:px-8 py-16">
         <h2 className="text-3xl font-semibold text-blue-800 mb-8">Nuestros Servicios</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
@@ -68,6 +73,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+
       <ContactForm />
     </div>
   );
