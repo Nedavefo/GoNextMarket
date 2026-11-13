@@ -2,7 +2,7 @@
 
 Corporate website for **GoNextMarket**, a company that runs field operations for market-research studies: survey programming, field QA, technical support for interviewers and periodic SPSS deliveries.
 
-**Live site:** https://go-next-market.vercel.app
+**Live site:** https://nedavefo.github.io/GoNextMarket/
 
 ## Tech stack
 
@@ -10,12 +10,13 @@ Corporate website for **GoNextMarket**, a company that runs field operations for
 - [Vite](https://vitejs.dev/) for development and production builds
 - [Tailwind CSS](https://tailwindcss.com/) + PostCSS / Autoprefixer
 - [Formspree](https://formspree.io/) for the contact form (no backend needed)
-- Deployed on [Vercel](https://vercel.com/)
+- Deployed to GitHub Pages with a GitHub Actions workflow (`.github/workflows/deploy.yml`)
 
 ## Project structure
 
 ```
 src/
+├─ hooks.js              # scroll-reveal hook + asset helper
 ├─ components/
 │  ├─ Navbar.jsx        # Top navigation
 │  ├─ ServiceCard.jsx   # Reusable card for each service
